@@ -116,7 +116,7 @@ public class ShadowLayout extends FrameLayout {
 
     private Bitmap createShadowBitmap(int shadowWidth, int shadowHeight, float cornerRadius, float shadowRadius,
                                       float dx, float dy, int shadowColor, int fillColor) {
-
+        // Bitmap.Config.ALPHA_8：颜色信息只由透明度组成，占8位。
         Bitmap output = Bitmap.createBitmap(shadowWidth, shadowHeight, Bitmap.Config.ALPHA_8);
         Canvas canvas = new Canvas(output);
 
